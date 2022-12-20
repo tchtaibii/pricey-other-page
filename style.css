@@ -16,7 +16,7 @@ body {
     background-position: top;
     background-size: contain;
     background-repeat: no-repeat;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 header {
