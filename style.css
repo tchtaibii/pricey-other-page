@@ -81,3 +81,17 @@ textarea::placeholder {
     letter-spacing: -0.05em;
     color: rgba(29, 48, 66, 0.2);
 }
+#file_drag {
+    opacity: 0;
+    
+}
+.search-form{
+    background-image: url(/img/search.svg);
+    background-position-x: 1rem;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+
+tr:nth-child(n+3):not(:first-child):not(:nth-child(2)) {
+    border-top: 1px solid #E8EAEC;
+}

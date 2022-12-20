@@ -469,12 +469,186 @@
                         </div>
                     </div>
                     <div class="w-full flex justify-center items-center">
-                        <input type="submit" value="Add To" class="font-[Inter] text-semibold text-base text-white text-center bg-[#236BFF] rounded-[5px] w-[156px] h-[43px]">
+                        <input type="submit" value="Add To"
+                            class="font-[Inter] text-semibold text-base text-white text-center bg-[#236BFF] rounded-[5px] w-[156px] h-[43px]">
                     </div>
                 </form>
-
             </div>
         </div>
+        <div style="box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.03);"
+            class="flex flex-col px-[59px] pt-[35px] justify-start mx-auto mt-[42px] items-start w-[1397px] h-[600px] bg-[#FFFFFF] border border-[#F4F8FF] rounded-[11px]">
+            <div class="flex flex-row gap-[147px] justify-start items-center mb-[49px]">
+                <p style="white-space: nowrap;" class="mr-[21px] font-[Inter] font-semibold text-base text-[#1D3042]">Products List</p>
+                <div class="flex flex-row items-start gap-[15px]">
+                    <form>
+                        <div style="border: 1px dashed rgba(185, 179, 198, 0.25);"
+                            class="w-[181px] h-[41px] rounded-[8px]">
+                            <input class="relative w-full h-full cursor-pointer z-10" name="file" id="file_drag" ref="fileInput" type="file">
+                            <div style="transform: translateY(-28px);box-sizing: border-box;"
+                                class="flex flex-row gap-[8px] pl-[18px] z-0">
+                            <img src="/img/export.svg" alt="">
+                            <p class="font-[Inter] text-[#B9B3C6] font-400 text-[14px] tracking-tighter">Upload .csv /
+                                txt files</p>
+                        </div>
+                </div>
+                </form>
+                <form style="border: 1px solid rgba(185, 179, 198, 0.25);" action=""
+                    class="search-form flex flex-row w-[390px] pl-[42px] h-[41px] rounded-[8px]">
+                    <input class="w-[99%] outline-none text-[#1D3042] pr-[10px]" type="search" name="" id=""
+                        placeholder="Search for product....">
+                </form>
+            </div>
+            <div class="flex flex-row gap-[14px]">
+                <a class="w-[137px] tracking-tighter h-[41px] bg-[#236BFF] rounded-[11px] text-[14px] flex justify-center items-center font-[Inter] font-400  " href="">Clear All</a>
+                <a class="w-[137px] tracking-tighter h-[41px] border border-[#236BFF] text-[#236BFF] text-[14px] rounded-[11px] flex justify-center items-center font-[Inter] font-400  " href="">Delete Rivets</a>
+            </div>
+            </div>
+            <table class="w-full">
+                <tbody class="w-full">
+                    <tr class="flex flex-row w-full justify-between">
+                        <td class="flex font-[Inter] font-500 text-[#1D3042] tracking-tighter flex-row gap-[6px]">
+                            <img src="img/identifier.svg" alt="">
+                            Identifier
+                        </td>
+                        <td class="flex font-[Inter] font-500 text-[#1D3042] tracking-tighter flex-row gap-[6px]">
+                            <img src="img/Modules.svg" alt="">    
+                            Modules
+                        </td>
+                        <td class="flex font-[Inter] font-500 text-[#1D3042] tracking-tighter flex-row gap-[6px]">
+                            <img src="img/NextUpdate.svg" alt="">
+                            Next Update
+                        </td>
+                        <td class="flex font-[Inter] font-500 text-[#1D3042] tracking-tighter flex-row gap-[6px]">
+                            <img src="img/NumberOfResults.svg" alt="">
+                            Number Of Results
+                        </td>
+                        <td class="flex font-[Inter] font-500 text-[#1D3042] tracking-tighter flex-row gap-[6px]">
+                            <img src="img/Status.svg" alt="">
+                            Status
+                        </td>
+                        <td class="flex font-[Inter] font-500 text-[#1D3042] tracking-tighter flex-row gap-[6px]">
+                            <img src="img/Actions.svg" alt="">
+                            Actions
+                        </td>
+                    </tr>
+                    <tr class="flex h-[88px] flex-row w-full justify-between items-center">
+                        <td class="flex font-[Inter] font-500 text-[#1D3042] tracking-tighter flex-row justify-center">
+                            2151055
+                        </td>
+                        <td class="flex bg-[#EAF2FE] relative left-[30px] rounded-[4px] w-[103px] h-[32px] items-center flex-row justify-center">
+                            <img src="img/t-media.svg" alt="">
+                        </td>
+                        <td class="flex bg-[#F9E6E0] left-[14px] relative font-[Inter] text-[#E28165] text-[14px] rounded-[4px] w-[120px] h-[32px] items-center flex-row justify-center gap-[7px]">
+                            Now<img src="img/refresh.svg" alt="">
+                        </td>
+                        <td class="flex bg-[#F6EDDA] relative left-[9px] rounded-[4px] font-[Inter] text-[#D1A548] text-[14px] w-[120px] h-[32px] items-center flex-row justify-center gap-[7px]">
+                            0 prize/s
+                        </td>
+                        <td class="flex relative left-[43px] bg-[#e94a651a] rounded-[4px] font-[Inter] text-[#E94A65] text-[14px] w-[141px] h-[32px] items-center flex-row justify-center gap-[7px]">
+                            In Processing<img src="img/red-refresh.svg" alt="">
+                        </td>
+                        <td class="flex items-center relative right-[24px] flex-row justify-center gap-[10px]">
+                            <img src="img/show.svg" alt="">
+                            <img src="img/trash.svg" alt="">
+
+                        </td>
+                        
+                    </tr>
+                    <tr class="flex h-[88px] flex-row w-full justify-between items-center">
+                        <td class="flex font-[Inter] font-500 text-[#1D3042] tracking-tighter flex-row justify-center">
+                            2151055
+                        </td>
+                        <td class="flex bg-[#EAF2FE] relative left-[30px] rounded-[4px] w-[103px] h-[32px] items-center flex-row justify-center">
+                            <img src="img/t-media.svg" alt="">
+                        </td>
+                        <td class="flex bg-[#F9E6E0] left-[14px] relative font-[Inter] text-[#E28165] text-[14px] rounded-[4px] w-[120px] h-[32px] items-center flex-row justify-center gap-[7px]">
+                            Now<img src="img/refresh.svg" alt="">
+                        </td>
+                        <td class="flex bg-[#F6EDDA] relative left-[9px] rounded-[4px] font-[Inter] text-[#D1A548] text-[14px] w-[120px] h-[32px] items-center flex-row justify-center gap-[7px]">
+                            0 prize/s
+                        </td>
+                        <td class="flex relative left-[43px] bg-[#e94a651a] rounded-[4px] font-[Inter] text-[#E94A65] text-[14px] w-[141px] h-[32px] items-center flex-row justify-center gap-[7px]">
+                            In Processing<img src="img/red-refresh.svg" alt="">
+                        </td>
+                        <td class="flex items-center relative right-[24px] flex-row justify-center gap-[10px]">
+                            <img src="img/show.svg" alt="">
+                            <img src="img/trash.svg" alt="">
+
+                        </td>
+                        
+                    </tr>
+                    <tr class="flex h-[88px] flex-row w-full justify-between items-center">
+                        <td class="flex font-[Inter] font-500 text-[#1D3042] tracking-tighter flex-row justify-center">
+                            2151055
+                        </td>
+                        <td class="flex bg-[#EAF2FE] relative left-[30px] rounded-[4px] w-[103px] h-[32px] items-center flex-row justify-center">
+                            <img src="img/t-media.svg" alt="">
+                        </td>
+                        <td class="flex bg-[#F9E6E0] left-[14px] relative font-[Inter] text-[#E28165] text-[14px] rounded-[4px] w-[120px] h-[32px] items-center flex-row justify-center gap-[7px]">
+                            Now<img src="img/refresh.svg" alt="">
+                        </td>
+                        <td class="flex bg-[#F6EDDA] relative left-[9px] rounded-[4px] font-[Inter] text-[#D1A548] text-[14px] w-[120px] h-[32px] items-center flex-row justify-center gap-[7px]">
+                            0 prize/s
+                        </td>
+                        <td class="flex relative left-[43px] bg-[#e94a651a] rounded-[4px] font-[Inter] text-[#E94A65] text-[14px] w-[141px] h-[32px] items-center flex-row justify-center gap-[7px]">
+                            In Processing<img src="img/red-refresh.svg" alt="">
+                        </td>
+                        <td class="flex items-center relative right-[24px] flex-row justify-center gap-[10px]">
+                            <img src="img/show.svg" alt="">
+                            <img src="img/trash.svg" alt="">
+
+                        </td>
+                        
+                    </tr>
+                    <tr class="flex h-[88px] flex-row w-full justify-between items-center">
+                        <td class="flex font-[Inter] font-500 text-[#1D3042] tracking-tighter flex-row justify-center">
+                            2151055
+                        </td>
+                        <td class="flex bg-[#EAF2FE] relative left-[30px] rounded-[4px] w-[103px] h-[32px] items-center flex-row justify-center">
+                            <img src="img/t-media.svg" alt="">
+                        </td>
+                        <td class="flex bg-[#F9E6E0] left-[14px] relative font-[Inter] text-[#E28165] text-[14px] rounded-[4px] w-[120px] h-[32px] items-center flex-row justify-center gap-[7px]">
+                            Now<img src="img/refresh.svg" alt="">
+                        </td>
+                        <td class="flex bg-[#F6EDDA] relative left-[9px] rounded-[4px] font-[Inter] text-[#D1A548] text-[14px] w-[120px] h-[32px] items-center flex-row justify-center gap-[7px]">
+                            0 prize/s
+                        </td>
+                        <td class="flex relative left-[43px] bg-[#e94a651a] rounded-[4px] font-[Inter] text-[#E94A65] text-[14px] w-[141px] h-[32px] items-center flex-row justify-center gap-[7px]">
+                            In Processing<img src="img/red-refresh.svg" alt="">
+                        </td>
+                        <td class="flex items-center relative right-[24px] flex-row justify-center gap-[10px]">
+                            <img src="img/show.svg" alt="">
+                            <img src="img/trash.svg" alt="">
+
+                        </td>
+                        
+                    </tr>
+                    <tr class="flex h-[88px] flex-row w-full justify-between items-center">
+                        <td class="flex font-[Inter] font-500 text-[#1D3042] tracking-tighter flex-row justify-center">
+                            2151055
+                        </td>
+                        <td class="flex bg-[#EAF2FE] relative left-[30px] rounded-[4px] w-[103px] h-[32px] items-center flex-row justify-center">
+                            <img src="img/t-media.svg" alt="">
+                        </td>
+                        <td class="flex bg-[#F9E6E0] left-[14px] relative font-[Inter] text-[#E28165] text-[14px] rounded-[4px] w-[120px] h-[32px] items-center flex-row justify-center gap-[7px]">
+                            Now<img src="img/refresh.svg" alt="">
+                        </td>
+                        <td class="flex bg-[#F6EDDA] relative left-[9px] rounded-[4px] font-[Inter] text-[#D1A548] text-[14px] w-[120px] h-[32px] items-center flex-row justify-center gap-[7px]">
+                            0 prize/s
+                        </td>
+                        <td class="flex relative left-[43px] bg-[#e94a651a] rounded-[4px] font-[Inter] text-[#E94A65] text-[14px] w-[141px] h-[32px] items-center flex-row justify-center gap-[7px]">
+                            In Processing<img src="img/red-refresh.svg" alt="">
+                        </td>
+                        <td class="flex items-center relative right-[24px] flex-row justify-center gap-[10px]">
+                            <img src="img/show.svg" alt="">
+                            <img src="img/trash.svg" alt="">
+
+                        </td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+    </div>
     </div>
 </body>
 
