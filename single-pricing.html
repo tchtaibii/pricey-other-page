@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>pricey</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+		<link rel="stylesheet" href="swiper-bundle.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
+		<link href="https://fonts.cdnfonts.com/css/circular-std" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body class="flex flex-col justify-between min-h-[100vh]">
+		<div class="container mx-auto w-full">
+			<!-- header -->
+			<header class="flex w-[80%] mx-auto flex-row justify-between items-center w-full mt-[88px]">
+				<div>
+					<!-- logo -->
+					<img src="img/logo-header.svg" alt="">
+				</div>
+				<div class="menu-nav flex flex-row gap-[18px] items-center">
+					<a href="">
+					<img src="img/message-header.svg" alt="">
+					</a>
+					<a href="">
+					<img src="img/bells.svg" alt="">
+					</a>
+					<a href="" class="w-[40px] h-[40px] rounded-full overflow-hidden">
+					<img src="img/profile.svg" alt="">
+					</a>
+					<a href="">
+					<img src="img/more.svg" alt="">
+					</a>
+				</div>
+			</header>
+			<!-- content -->
+			<div style="box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.03);" class="flex flex-col px-[59px] pt-[35px] justify-start mx-auto mt-[121px] items-start w-[1397px] h-[251px] bg-[#FFFFFF] border border-[#F4F8FF] rounded-[11px]">
+				<div class="flex w-full flex-row justify-between items-center mb-[49px]">
+					<p style="white-space: nowrap;" class="mr-[21px] font-[Inter] font-semibold text-base text-[#1D3042]">
+						Products List
+					</p>
+					<div class="flex flex-row items-start gap-[15px]">
+						<form>
+							<div style="border: 1px dashed rgba(185, 179, 198, 0.25);" class="w-[181px] h-[41px] rounded-[8px]">
+								<input class="relative w-full h-full cursor-pointer z-10" name="file" id="file_drag" ref="fileInput" type="file">
+								<div style="transform: translateY(-28px);box-sizing: border-box;" class="flex flex-row gap-[8px] pl-[18px] z-0">
+									<img src="/img/export.svg" alt="">
+									<p class="font-[Inter] text-[#B9B3C6] font-400 text-[14px] tracking-tighter">Upload .csv
+										/
+										txt files
+									</p>
+								</div>
+							</div>
+						</form>
+						<form style="border: 1px solid rgba(185, 179, 198, 0.25);" action="" class="search-form flex flex-row w-[390px] pl-[42px] h-[41px] rounded-[8px]">
+							<input class="w-[99%] outline-none text-[#1D3042] pr-[10px]" type="search" name="" id="" placeholder="Search for product....">
+						</form>
+					</div>
+					
+				</div>
+				<table class="w-full mb-[40px]">
+					<tbody class="w-full">
+						<tr class="flex flex-row w-full justify-between">
+							<td class="flex font-[Inter] font-500 text-[#1D3042] tracking-tighter flex-row gap-[6px]">
+								<img src="img/identifier.svg" alt="">
+								Identifier
+							</td>
+							<td class="flex font-[Inter] font-500 text-[#1D3042] tracking-tighter flex-row gap-[6px]">
+								<img src="img/Modules.svg" alt="">
+								Modules
+							</td>
+							<td class="flex font-[Inter] font-500 text-[#1D3042] tracking-tighter flex-row gap-[6px]">
+								<img src="img/NextUpdate.svg" alt="">
+								Next Update
+							</td>
+							<td class="flex font-[Inter] font-500 text-[#1D3042] tracking-tighter flex-row gap-[6px]">
+								<img src="img/NumberOfResults.svg" alt="">
+								Number Of Results
+							</td>
+							<td class="flex font-[Inter] font-500 text-[#1D3042] tracking-tighter flex-row gap-[6px]">
+								<img src="img/Status.svg" alt="">
+								Status
+							</td>
+							<td class="flex font-[Inter] font-500 text-[#1D3042] tracking-tighter flex-row gap-[6px]">
+								<img src="img/Actions.svg" alt="">
+								Actions
+							</td>
+						</tr>
+						<tr class="flex h-[88px] flex-row w-full justify-between items-center">
+							<td class="flex font-[Inter] font-500 text-[#1D3042] tracking-tighter flex-row justify-center">
+								2151055
+							</td>
+							<td class="flex bg-[#EAF2FE] relative left-[30px] rounded-[4px] w-[103px] h-[32px] items-center flex-row justify-center">
+								<img src="img/t-media.svg" alt="">
+							</td>
+							<td class="flex bg-[#F9E6E0] left-[14px] relative font-[Inter] text-[#E28165] text-[14px] rounded-[4px] w-[120px] h-[32px] items-center flex-row justify-center gap-[7px]">
+								Now<img src="img/refresh.svg" alt="">
+							</td>
+							<td class="flex bg-[#F6EDDA] relative left-[9px] rounded-[4px] font-[Inter] text-[#D1A548] text-[14px] w-[120px] h-[32px] items-center flex-row justify-center gap-[7px]">
+								0 prize/s
+							</td>
+							<td class="flex relative left-[43px] bg-[#e94a651a] rounded-[4px] font-[Inter] text-[#E94A65] text-[14px] w-[141px] h-[32px] items-center flex-row justify-center gap-[7px]">
+								In Processing<img src="img/red-refresh.svg" alt="">
+							</td>
+							<td class="flex items-center relative right-[24px] flex-row justify-center gap-[10px]">
+								<a href="#"><img src="img/show.svg" alt=""></a>
+								<a href="#"><img src="img/trash.svg" alt=""></a>
+							</td>
+						</tr>
+						
+						
+						
+						
+					</tbody>
+				</table>
+			</div>
+            
+		</div>
+		<footer class=" w-full bg-[#F8FBFD] h-[200px] mt-[217px] gap-[600px] flex flex-row justify-center items-end
+			px-[258px] py-[60px]">
+			<div class="flex flex-col gap-[29px] items-start justify-center ">
+				<img src="/img/logo.svg" alt="">
+				<h5 class="font-[Inter] text-[#93A0AD] tracking-tighter	">© Pricey 2022. All rights reserved.
+				</h5>
+			</div>
+			<ul class="flex flex-row gap-[48px] items-start ">
+				<li><a class="font-[Inter] text-[#909FAC] tracking-tighter font-400" href="">Home</a></li>
+				<li><a class="font-[Inter] text-[#909FAC] tracking-tighter font-400" href="">Features</a></li>
+				<li><a class="font-[Inter] text-[#909FAC] tracking-tighter font-400" href="">Pricing</a></li>
+				<li><a class="font-[Inter] text-[#909FAC] tracking-tighter font-400" href="">Testimonials</a>
+				</li>
+				<li><a class="font-[Inter] text-[#909FAC] tracking-tighter font-400" href="">FAQs</a></li>
+			</ul>
+		</footer>
+	</body>
+</html>
