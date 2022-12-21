@@ -95,3 +95,13 @@ textarea::placeholder {
 tr:nth-child(n+3):not(:first-child):not(:nth-child(2)) {
     border-top: 1px solid #E8EAEC;
 }
+
+.change-chart::after{
+    content: "";
+    background-color: #236BFF;
+    height: 1px;
+    width: 85%;
+    border: 0.5px solid #236BFF;
+    display: block;
+    transform: translate(0px, 17px);
+}
